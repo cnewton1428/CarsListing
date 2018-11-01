@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="#"
+      th:action="@{/addCategory}"
+      th:object="${category}"
+    method="post">
+<!--after user click's submit button send user to addCategory button-->
+<input type="hidden" th:field="*{id}"/>
+Category Name : <input type="text" name="name"
+                       th:field="*{name}"
+
+</form>
+</body>
+</html>
